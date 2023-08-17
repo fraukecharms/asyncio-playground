@@ -8,8 +8,9 @@ python3 -m venv ~/.asyncio-playground
 source ~/.asyncio-playground/bin/activate
 ```
 
-Install requirements.
+Upgrade pip and install requirements.
 ```shell
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
