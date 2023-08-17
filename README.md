@@ -1,7 +1,42 @@
 # `asyncio` Playground
 
+## Installation
 
-## Blog Posts
+Create and activate a virtual environment.
+```shell
+python3 -m venv ~/.asyncio-playground
+source ~/.asyncio-playground/bin/activate
+```
+
+Install requirements.
+```shell
+pip install -r requirements.txt
+```
+
+
+## Usage
+
+Start an iPython shell in the `src` directory. 
+```shell
+cd src
+ipython
+```
+
+Load the `autoreload` extension.
+```python
+%load_ext autoreload
+%autoreload 2
+```
+
+And have fun :).
+```python
+import coroutines_and_tasks.ex4_gather_vs_taskgroup as ex4
+ex4.main(entrypoint=ex4.entrypoint_taskgroup)
+```
+
+
+## References
+### Blog Posts
 
 * [Waiting in asyncio by Hynek Schlawack (updated in 2023)](https://hynek.me/articles/waiting-in-asyncio/)
 
@@ -13,7 +48,7 @@
 
 
 
-## EuroPython2023 Talk by Junya Fukuda
+### EuroPython2023 Talk by Junya Fukuda
 
 [Asyncio Evolved: Enhanced Exception Handling with TaskGroup in Python 3.11](https://ep2023.europython.eu/session/asyncio-evolved-enhanced-exception-handling-with-taskgroup-in-python-311)
 
