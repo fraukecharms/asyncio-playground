@@ -1,5 +1,7 @@
 # `asyncio` Playground
 
+Some introductory `asyncio` examples including the new `TaskGroup` API in Python 3.11.
+
 ## Installation
 
 Create and activate a virtual environment.
